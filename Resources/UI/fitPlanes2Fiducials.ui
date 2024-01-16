@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fiducialPlane2slicer</class>
+ <widget class="qMRMLWidget" name="fiducialPlane2slicer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>624</width>
+    <height>522</height>
+   </rect>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="3" column="0" colspan="2">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Display plane defined by first 3 fiducial in SliceNodeRed by clicking on Apply button</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Display plane defined by 3 point: fourth fiducial, fourt fiducial projection on plane, first fiducial point.</string>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButtonPlane2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Create Plane2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="22" column="0" colspan="2">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Create firth display plane orthogonal on planes</string>
+     </property>
+    </widget>
+   </item>
+   <item row="23" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButtonPlane3">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Create Plane3</string>
+     </property>
+    </widget>
+   </item>
+   <item row="24" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Slice:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0" colspan="2">
+    <widget class="QPushButton" name="pushButtonPlane1">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>Run the algorithm.</string>
+     </property>
+     <property name="text">
+      <string>Create Plane1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="ctkComboBox" name="point1ComboBox"/>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Point 1:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="ctkComboBox" name="point2ComboBox"/>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Point 2:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Fiducial:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="ctkComboBox" name="fiducialSelectorComboBox"/>
+   </item>
+   <item row="6" column="1">
+    <widget class="ctkComboBox" name="sliceSelectorComboBox"/>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>Point 3:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="ctkComboBox" name="point3ComboBox"/>
+   </item>
+   <item row="16" column="1">
+    <widget class="ctkComboBox" name="sliceSelector2ComboBox"/>
+   </item>
+   <item row="16" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Slice:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="17" column="1">
+    <widget class="ctkComboBox" name="point4ComboBox"/>
+   </item>
+   <item row="17" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>Point 4:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="18" column="1">
+    <widget class="ctkComboBox" name="point5ComboBox"/>
+   </item>
+   <item row="18" column="0">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>Point 5:</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ctkComboBox</class>
+   <extends>QComboBox</extends>
+   <header>ctkComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>qMRMLWidget</class>
+   <extends>QWidget</extends>
+   <header>qMRMLWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
